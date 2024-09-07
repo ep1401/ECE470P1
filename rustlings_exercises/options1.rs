@@ -7,7 +7,6 @@
         // We use the 24-hour system here, so 10PM is a value of 22 and 12AM is a
         // value of 0 The Option output should gracefully handle cases where
         // time_of_day > 23.
-        // TODO: Complete the function body - remember to return an Option!
         if time_of_day > 23 {
             None
         } else if time_of_day < 22 {
@@ -32,8 +31,6 @@
     
         #[test]
         fn raw_value() {
-            // TODO: Fix this test. How do you get at the value contained in the
-            // Option?
             let icecreams = maybe_icecream(12);
             assert_eq!(icecreams, Some(5));
         }
